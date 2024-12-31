@@ -2,10 +2,32 @@ body {
     background-color: #EEF0F2; /* Background color */
     align-items: center; /* Center vertically */
     text-align: center; /* Center text */
-    margin: 5%; /* Setting margins */
+    margin: 1%;
+    font-family: 'Segoe Script', cursive;
 }
 
 h1 {
     color: #792698;
-    font-family: 'Lucida Handwriting', cursive;
+    font-family: 'Lucida Handwriting', cursive !important;
+    margin: 2% 0% 2% 0%;
+}
+
+nav {
+    color: #960200;
+}
+
+nav a {
+    color: inherit; /* Inherit the text color from the parent element */
+    text-decoration: none; /* Remove the underline */
+}
+
+nav ul {
+    list-style-type: none; /* Remove default bullet points */
+    margin: 2% 0% 0% 0%; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Display items horizontally */
+}
+
+nav li {
+    margin-right: 10%; /* Space between list items */
 }
