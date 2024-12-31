@@ -1,19 +1,32 @@
 body {
-    background-color: #EEF0F2; /* Background color */
+    background-color: #FFFFFF; /* Background color */
     align-items: center; /* Center vertically */
     text-align: center; /* Center text */
-    margin: 1%;
+    margin: 0%;
     font-family: 'Segoe Script', cursive;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start; /* Distribute space between h1 and nav */
+    align-items: center; /* Align items vertically centered */
+    width: 100%; /* Make sure the header takes up full width */
+    position: sticky;  /* Make the header sticky */
+    top: 0;            /* Stick the header at the top */
+    z-index: 1000;     /* Ensure the header stays above other content */
+    background-color: #EEF0F2;
 }
 
 h1 {
     color: #792698;
     font-family: 'Lucida Handwriting', cursive !important;
     margin: 2% 0% 2% 0%;
+    display: flex;
 }
 
 nav {
-    color: #960200;
+    display: flex;            /* Enable Flexbox layout */
+    margin-left: 10%;
 }
 
 nav a {
@@ -21,13 +34,21 @@ nav a {
     text-decoration: none; /* Remove the underline */
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
 nav ul {
     list-style-type: none; /* Remove default bullet points */
-    margin: 2% 0% 0% 0%; /* Remove default margin */
     padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
     display: flex; /* Display items horizontally */
 }
 
 nav li {
-    margin-right: 10%; /* Space between list items */
+    margin-right: 10%;       /* Space between menu items */
 }
+  
+  nav li:last-child {
+    margin-right: 0%;          /* Remove margin from the last item */
+  }
