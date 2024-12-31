@@ -1,57 +1,57 @@
 body {
-    background-color: #230903; /* Background color */
-    align-items: center; /* Center vertically */
-    text-align: center; /* Center text */
-    margin: 0%;
-    font-family: 'Garamond', serif;
+    background-color: #230903; /* Dark red background color for the entire page */
+    align-items: center;       /* Centers content vertically if used with Flexbox */
+    text-align: center;        /* Align text to the center horizontally */
+    margin: 0%;                /* Remove default margin from body */
+    font-family: 'Garamond', serif; /* Set serif font for text */
 }
 
 header {
-    display: flex;
-    justify-content: flex-start; /* Distribute space between h1 and nav */
-    align-items: center; /* Align items vertically centered */
-    width: 100%; /* Make sure the header takes up full width */
-    position: sticky;  /* Make the header sticky */
-    top: 0;            /* Stick the header at the top */
-    z-index: 1000;     /* Ensure the header stays above other content */
-    background-color: #EEF0F2;
-    box-shadow: 0 2vw 4vh rgba(0, 0, 0, 0.2); /* Use vw and vh for shadow */
+    display: flex;             /* Use Flexbox for layout */
+    justify-content: flex-start; /* Align h1 and nav at the start */
+    align-items: center;       /* Vertically center items in the header */
+    width: 100%;               /* Full width to span the page */
+    position: sticky;          /* Keep the header visible at the top on scroll */
+    top: 0;                    /* Stick the header at the top */
+    z-index: 1000;             /* Ensure header stays above other content */
+    background-color: #EEF0F2; /* Light background for contrast */
+    box-shadow: 0 3vw 6vh rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
 }
 
 h1 {
-    color: #7D6800;
-    font-family: 'Lucida Handwriting', cursive !important;
-    margin: 2% 0% 2% 0%;
-    display: flex;
+    color: #7D6800;            /* Dark yellow-brown text color for the heading */
+    font-family: 'Lucida Handwriting', cursive !important; /* Cursive font style */
+    margin: 2% 0% 2% 0%;       /* Top and bottom spacing for the heading */
+    display: flex;             /* Flex display ensures compatibility with Flexbox layout */
 }
 
 nav {
-    display: flex;            /* Enable Flexbox layout */
-    margin-left: 40%;
-    font-size: large;
-    font-weight: 500;
+    display: flex;             /* Enable horizontal Flexbox layout */
+    margin-left: 40%;          /* Offset navigation from the start of the header */
+    font-size: large;          /* Make the text size slightly larger */
+    font-weight: 500;          /* Medium font weight for readability */
 }
 
 nav a {
-    color: inherit; /* Inherit the text color from the parent element */
-    text-decoration: none; /* Remove the underline */
+    color: inherit;            /* Link color inherits from parent element */
+    text-decoration: none;     /* Remove underline for links */
 }
 
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline links on hover for better UX */
 }
 
 nav ul {
-    list-style-type: none; /* Remove default bullet points */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    display: flex; /* Display items horizontally */
+    list-style-type: none;     /* Remove default bullet points for list */
+    padding: 0;                /* Reset default padding for the list */
+    margin: 0;                 /* Reset default margin for the list */
+    display: flex;             /* Arrange list items horizontally */
 }
 
 nav li {
-    margin-right: 25%;       /* Space between menu items */
+    margin-right: 25%;         /* Space between navigation items */
 }
-  
-  nav li:last-child {
-    margin-right: 0%;          /* Remove margin from the last item */
-  }
+
+nav li:last-child {
+    margin-right: 0%;          /* Remove margin from the last navigation item */
+}
