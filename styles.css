@@ -1,0 +1,11 @@
+body {
+    background-color: #EEF0F2; /* Background color */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
+    margin: 5%; /* Setting margins */
+}
+
+h1 {
+    color: #792698;
+    font-family: 'Lucida Handwriting', cursive;
+}
